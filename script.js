@@ -48,9 +48,12 @@ let loginFormValidation = document.getElementById("loginFormValidation");
 document.getElementById("loginNow").addEventListener("click",validation)
 
 function validation() {
-    if (userEmail.value === "admin" && userPassword.value === "admin123" ) {
+    if (userEmail.value === localStorage.getItem("email") && userPassword.value === localStorage.getItem("password")) {
         // display notification if login succeed
         document.getElementById("notif").style.display="flex";
+        loginFormValidation.innerText="";
+        userEmail.value="";
+        userPassword.value="";
     }
 
     else if (userEmail.value === "" || userPassword.value === "" ) {
@@ -99,10 +102,16 @@ function validationRegister() {
         document.getElementById("notifRegister").style.display="flex";
         // detele wrong validation after login
         registerFormValidation.innerText="";
-        // to delete after logging
-        registerEmail.value="";
-        registerPassword.value="";
-        registerPasswordConfirm.value="";
+        
+        // Save registration data to localStorage
+            
+            localStorage.setItem("email",registerEmail.value);
+            localStorage.setItem("password",registerPassword.value);
+
+            // empty after save to local storage
+            registerEmail.value="";
+            registerPassword.value="";
+            registerPasswordConfirm.value="";
     }
 }
 
