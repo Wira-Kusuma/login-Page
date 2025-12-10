@@ -114,5 +114,3 @@ function validationRegister() {
             registerPasswordConfirm.value="";
     }
 }
-
-console.log("open file pw.txt to login")
