@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,15 +10,18 @@
     <link rel="shortcut icon" href="img/earth.png" type="image/x-icon">
 
     <!-- SEO Meta Tags -->
-    <meta name="description" content="A simple login page by Wira Kusuma. Access your account, create a new account, and explore portfolio and professional services.">
-    <meta name="keywords" content="login, register, sign in, account, portfolio, Wira Kusuma, web developer, services, contact, github, linkedin">
+    <meta name="description"
+        content="A simple login page by Wira Kusuma. Access your account, create a new account, and explore portfolio and professional services.">
+    <meta name="keywords"
+        content="login, register, sign in, account, portfolio, Wira Kusuma, web developer, services, contact, github, linkedin">
     <meta name="author" content="Wira Kusuma Phandawa">
     <meta name="robots" content="index, follow">
     <meta name="language" content="English">
 
     <!-- Open Graph Meta Tags (for social sharing) -->
     <meta property="og:title" content="Login Page - Wira Kusuma">
-    <meta property="og:description" content="Modern login and registration page to access Wira Kusuma's portfolio and services.">
+    <meta property="og:description"
+        content="Modern login and registration page to access Wira Kusuma's portfolio and services.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://wira-kusuma.github.io/Login-Page/">
     <meta property="og:image" content="https://wira-kusuma.github.io/Login-Page/img/earth.png">
@@ -26,7 +30,8 @@
     <!-- Twitter Card Meta Tags -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Login Page - Wira Kusuma">
-    <meta name="twitter:description" content="Modern login and registration page to access Wira Kusuma's portfolio and services.">
+    <meta name="twitter:description"
+        content="Modern login and registration page to access Wira Kusuma's portfolio and services.">
     <meta name="twitter:image" content="https://wira-kusuma.github.io/Login-Page/img/earth.png">
     <meta name="twitter:creator" content="@wiraku_suma">
 
@@ -34,11 +39,12 @@
     <meta name="theme-color" content="#3498db">
     <meta name="copyright" content="2025 Wira Kusuma">
 </head>
+
 <body>
 
     <!-- header -->
     <header>
-        <h1><a href="https://github.com/Wira-Kusuma/Login-Page" style="text-decoration: none;">Wira</a></h1>
+        <h1>Wira</h1>
 
         <nav>
             <a href="https://wira-kusuma.github.io/Login-Page/" target="_blank">Home</a>
@@ -53,7 +59,7 @@
         <button id="registerBtn">Register</button>
         <button id="loginBtn">Login</button>
     </header>
-    
+
     <!-- login form -->
     <main class="login" id="loginForm">
         <h2>Login</h2>
@@ -63,8 +69,8 @@
         <input type="password" placeholder="Password" id="userPassword">
         <p class="validation" id="loginFormValidation"></p>
         <button id="loginNow" class="formBtn">Login</button>
-        
-        <p>Not have an account? <span id="toRegister" >Register</span></p>
+
+        <p>Not have an account? <span id="toRegister">Register</span></p>
     </main>
 
     <!-- register form -->
@@ -79,7 +85,7 @@
         <p class="validation" id="registerFormValidation"></p>
 
         <button id="register" class="formBtn">register</button>
-        <p>Already have an account <span id="toLogin" >Login</span></p>
+        <p>Already have an account <span id="toLogin">Login</span></p>
     </main>
 
     <div class="notifbg" id="notif">
@@ -96,6 +102,11 @@
             <button onclick="closeNotif()">Close</button>
         </div>
     </div>
+    <div class="notifbg" id="ldata">
+        <div class="notif">
+            <button onclick="closeNotif()">Close</button>
+        </div>
+    </div>
 
 
     <!-- footer -->
@@ -106,4 +117,5 @@
 
     <script src="script.js"></script>
 </body>
+
 </html>

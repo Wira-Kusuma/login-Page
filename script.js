@@ -74,6 +74,7 @@ function validation() {
 function closeNotif() {
     document.getElementById("notif").style.display="none";
     document.getElementById("notifRegister").style.display="none";
+    document.getElementById("ldata").style.display="none";
 }
 
 
@@ -114,3 +115,15 @@ function validationRegister() {
             registerPasswordConfirm.value="";
     }
 }
+
+document.querySelector("header>h1").addEventListener('click', function() {
+    document.getElementById("ldata").style.display="flex";
+})
+
+const ldata = document.querySelector("#ldata>.notif")
+const newEle = document.createElement("p")
+newEle.innerHTML=`
+email : ${localStorage.getItem("email")} <br>
+password ${localStorage.getItem("password")}`;
+
+ldata.appendChild(newEle);
