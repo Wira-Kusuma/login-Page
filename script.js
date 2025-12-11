@@ -124,6 +124,8 @@ const ldata = document.querySelector("#ldata>.notif")
 const newEle = document.createElement("p")
 newEle.innerHTML = `
 email : ${localStorage.getItem("email")} <br>
-password ${localStorage.getItem("password")}`;
+password : ${localStorage.getItem("password")}
+<button onclick="closeNotif()">Close</button>
+`;
 
 ldata.appendChild(newEle);
